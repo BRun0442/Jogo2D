@@ -18,7 +18,7 @@ namespace jogo2D
 	/// </summary>
 	public partial class MainForm : Form
 	{
-		public static Background background = new Background();
+		public static Level background = new Level();
 		Player player = new Player();
 		
 		public MainForm()
@@ -26,6 +26,7 @@ namespace jogo2D
 			InitializeComponent();
 			button1.BackColor = Color.Transparent;
 			button1.Parent = this;
+			button1.Left = (this.Width - button1.Width)/2;
 		}
 		
 		void Button1Click(object sender, EventArgs e)
@@ -34,16 +35,13 @@ namespace jogo2D
 			button1.Visible = false;
 			button1.Enabled = false;
 
-			background.sceneChange(1);
+			background.changeLevel(1);
 			background.Parent = this;
 			background.Width = this.Width;
 			background.Height = this.Height - 100;
 			
-			player.Load("character_right.gif");		
-			player.Parent = background;
 			player.Width = 76;
 			player.Height = 150;
-			player.SizeMode = PictureBoxSizeMode.StretchImage;
 			player.Left = 20;
 			player.Top = 300;
 		}

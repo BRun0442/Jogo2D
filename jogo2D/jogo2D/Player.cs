@@ -23,6 +23,9 @@ namespace jogo2D
 			this.atk = 10;
 			this.shield = 0;
 			this.speed = 15;
+			this.Parent = background;
+			this.SizeMode = PictureBoxSizeMode.StretchImage;
+			this.Load("character_right.gif");	
 		}
 		
 		public void playerMovHorizontal(int movSpeed)
