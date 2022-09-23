@@ -22,3 +22,11 @@ F:\ETEC\Desenvolvimento de Sistemas\Módulo 2\desenvolvimento de sistemas I\Chic
 F:\ETEC\Desenvolvimento de Sistemas\Módulo 2\desenvolvimento de sistemas I\Chicão\jogo2D\jogo2D\obj\Debug\jogo2D.csproj.GenerateResource.Cache
 F:\ETEC\Desenvolvimento de Sistemas\Módulo 2\desenvolvimento de sistemas I\Chicão\jogo2D\jogo2D\obj\Debug\jogo2D.exe
 F:\ETEC\Desenvolvimento de Sistemas\Módulo 2\desenvolvimento de sistemas I\Chicão\jogo2D\jogo2D\obj\Debug\jogo2D.pdb
+C:\Users\aluno.etec\Documents\Jogo2D-main\jogo2D\jogo2D\bin\Debug\jogo2D.exe.config
+C:\Users\aluno.etec\Documents\Jogo2D-main\jogo2D\jogo2D\bin\Debug\jogo2D.exe
+C:\Users\aluno.etec\Documents\Jogo2D-main\jogo2D\jogo2D\bin\Debug\jogo2D.pdb
+C:\Users\aluno.etec\Documents\Jogo2D-main\jogo2D\jogo2D\obj\Debug\jogo2D.MainForm.resources
+C:\Users\aluno.etec\Documents\Jogo2D-main\jogo2D\jogo2D\obj\Debug\jogo2D.csproj.GenerateResource.Cache
+C:\Users\aluno.etec\Documents\Jogo2D-main\jogo2D\jogo2D\obj\Debug\jogo2D.exe
+C:\Users\aluno.etec\Documents\Jogo2D-main\jogo2D\jogo2D\obj\Debug\jogo2D.pdb
+C:\Users\aluno.etec\Documents\Jogo2D-main\jogo2D\jogo2D\obj\Debug\jogo2D.csprojResolveAssemblyReference.cache

@@ -10,29 +10,38 @@ namespace jogo2D
 	/// </summary>
 	public class Level : PictureBox
 	{
-		public int currentLevel = 1;
+		public static int currentLevel = 4;
+		public static int lastLevel = 4;
 		public Level()
 		{
 			this.SizeMode = PictureBoxSizeMode.StretchImage;
-			this.Load("initalScene.jpg");
+			changeLevel();
 		}
 		
 		
-		public void changeLevel(int currentLevel)
+		public void changeLevel()
 		{
-			this.currentLevel = currentLevel;
 			switch(currentLevel)
 			{
 				case 1:
-					this.Load("background.jpg");
-				break;
+					this.Load("background1.jpg");
+					break;
+					
 				case 2:
-					this.Load("backgroundEgito.jpg");
-				break;
+					this.Load("background2.jpg");
+					break;
+					
+				case 3:
+					this.Load("background3.jpg");
+					break;
 				
+				case 4:
+					this.Load("background4.jpg");
+					break;
+					
 				default:
-					this.Load("initialScene.jpg");
-				break;
+					this.Load("background0.jpg");
+					break;
 			}
 		}
 	}

@@ -35,7 +35,6 @@ namespace jogo2D
 			button1.Visible = false;
 			button1.Enabled = false;
 
-			background.changeLevel(1);
 			background.Parent = this;
 			background.Width = this.Width;
 			background.Height = this.Height - 100;
@@ -48,12 +47,20 @@ namespace jogo2D
 		
 		void MainFormKeyDown(object sender, KeyEventArgs e)
 		{
-			if((e.KeyCode == Keys.A || e.KeyCode == Keys.Left) && player.Left >= 0)
+			if((e.KeyCode == Keys.A || e.KeyCode == Keys.Left))
 				player.playerMovHorizontal(-1);
 			
-			if((e.KeyCode == Keys.D || e.KeyCode == Keys.Right)) 
-				player.playerMovHorizontal(1);
-				
+			if(Level.lastLevel == Level.currentLevel)
+			{
+				if((e.KeyCode == Keys.D || e.KeyCode == Keys.Right) && ((player.Left + player.Width) < (background.Width - player.Width))){
+					player.playerMovHorizontal(1);
+				}
+			}else{
+				if((e.KeyCode == Keys.D || e.KeyCode == Keys.Right))
+				{
+					player.playerMovHorizontal(1);
+				}
+			}
 			
 			if((e.KeyCode == Keys.S || e.KeyCode == Keys.Down) && player.Top + player.Height <= background.Height)   
 				player.playerMovVertical(1);

@@ -23,13 +23,13 @@ namespace jogo2D
 			this.atk = 10;
 			this.shield = 0;
 			this.speed = 15;
-			this.Parent = background;
+			this.Parent = MainForm.background;
 			this.SizeMode = PictureBoxSizeMode.StretchImage;
 			this.Load("character_right.gif");	
 		}
 		
 		public void playerMovHorizontal(int movSpeed)
-		{					
+		{				
 			if(movSpeed != movSpeedData)
 			{
 				if(movSpeed == 1)
@@ -44,12 +44,20 @@ namespace jogo2D
 			movSpeedData = movSpeed;
 			
 			
-			if(this.Left > MainForm.background.Width)
+			if(this.Left >= MainForm.background.Width)
 			{
+				Level.currentLevel++;
 				movSpeedData = 0;
 				this.Load("character_right.gif");
-				MainForm.background.Load("background2.jpg");
+				MainForm.background.changeLevel();	
 				this.Left = 20;
+			}else if(this.Left <= -this.Width)
+			{
+				Level.currentLevel--;
+				movSpeedData = 0;
+				this.Load("character_right.gif");
+				MainForm.background.changeLevel();
+				this.Left = MainForm.background.Width - this.Width - 20;
 			}
 		}
 
