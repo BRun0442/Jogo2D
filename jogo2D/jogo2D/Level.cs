@@ -5,12 +5,9 @@ using System.Windows.Forms;
 
 namespace jogo2D
 {
-	/// <summary>
-	/// Description of level.
-	/// </summary>
 	public class Level : PictureBox
 	{
-		public static int currentLevel = 4;
+		public static int currentLevel = 0;
 		public static int lastLevel = 4;
 		public Level()
 		{
