@@ -51,6 +51,8 @@ namespace jogo2D
 			this.BackgroundImage = null;
 			spriteInicialScene.Visible = false;
 			
+			timer1.Enabled = true;
+			
 			//Configura o botão como invisível e desabilita o mesmo
 			this.KeyPreview = true;
 			button1.Visible = false;
@@ -109,6 +111,13 @@ namespace jogo2D
 			//Só poderá se mover para cima caso sua posição seja maior que zero (origin da tela)
 			if((e.KeyCode == Keys.W || e.KeyCode == Keys.Up) && player.Top >= 0)     
 				player.playerMovVertical(-1);
+		}
+		
+		
+		void Timer1Tick(object sender, EventArgs e)
+		{
+			Fireball bolaFogo = new Fireball();
+			bolaFogo.Left += 50;
 		}
 	}
 }

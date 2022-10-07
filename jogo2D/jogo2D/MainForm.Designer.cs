@@ -16,6 +16,7 @@ namespace jogo2D
 		private System.ComponentModel.IContainer components = null;
 		private System.Windows.Forms.Button button1;
 		private System.Windows.Forms.PictureBox spriteInicialScene;
+		private System.Windows.Forms.Timer timer1;
 		
 		/// <summary>
 		/// Disposes resources used by the form.
@@ -38,9 +39,11 @@ namespace jogo2D
 		/// </summary>
 		private void InitializeComponent()
 		{
+			this.components = new System.ComponentModel.Container();
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
 			this.button1 = new System.Windows.Forms.Button();
 			this.spriteInicialScene = new System.Windows.Forms.PictureBox();
+			this.timer1 = new System.Windows.Forms.Timer(this.components);
 			((System.ComponentModel.ISupportInitialize)(this.spriteInicialScene)).BeginInit();
 			this.SuspendLayout();
 			// 
@@ -74,6 +77,11 @@ namespace jogo2D
 			this.spriteInicialScene.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
 			this.spriteInicialScene.TabIndex = 1;
 			this.spriteInicialScene.TabStop = false;
+			// 
+			// timer1
+			// 
+			this.timer1.Interval = 800;
+			this.timer1.Tick += new System.EventHandler(this.Timer1Tick);
 			// 
 			// MainForm
 			// 
