@@ -17,7 +17,7 @@ namespace jogo2D
 	{
 		//Instancia as classes do fundo e do jogador
 		public static Level background = new Level();
-		Player player = new Player();
+		public static Player player = new Player();
 		int initialPlayerPosY = 300;
 		int initialPlayerPosX = 20;
 		
@@ -111,13 +111,19 @@ namespace jogo2D
 			//Só poderá se mover para cima caso sua posição seja maior que zero (origin da tela)
 			if((e.KeyCode == Keys.W || e.KeyCode == Keys.Up) && player.Top >= 0)     
 				player.playerMovVertical(-1);
+			
+			
+			//Atirar
+			if(e.KeyCode == Keys.Space || e.KeyCode == Keys.LButton)
+			{
+				player.fireTrigger();
+			}
 		}
 		
 		
 		void Timer1Tick(object sender, EventArgs e)
 		{
-			Fireball bolaFogo = new Fireball();
-			bolaFogo.Left += 50;
+			Fireball bolaFogo = new Fireball(-1);
 		}
 	}
 }

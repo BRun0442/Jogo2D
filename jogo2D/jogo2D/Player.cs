@@ -65,5 +65,10 @@ namespace jogo2D
 		{
 			this.Top += speed * movSpeed;
 		}
+		
+		public void fireTrigger()
+		{
+			Fireball fireball = new Fireball(1);
+		}
 	}
 }

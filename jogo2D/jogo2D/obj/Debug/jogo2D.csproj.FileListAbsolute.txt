@@ -38,3 +38,11 @@ C:\Users\gamer\Documents\Jogo2D-main\jogo2D\jogo2D\obj\Debug\jogo2D.MainForm.res
 C:\Users\gamer\Documents\Jogo2D-main\jogo2D\jogo2D\obj\Debug\jogo2D.csproj.GenerateResource.Cache
 C:\Users\gamer\Documents\Jogo2D-main\jogo2D\jogo2D\obj\Debug\jogo2D.exe
 C:\Users\gamer\Documents\Jogo2D-main\jogo2D\jogo2D\obj\Debug\jogo2D.pdb
+C:\Users\gamer\Documents\SharpDevelop Projects\Jogo2D\jogo2D\jogo2D\bin\Debug\jogo2D.exe.config
+C:\Users\gamer\Documents\SharpDevelop Projects\Jogo2D\jogo2D\jogo2D\bin\Debug\jogo2D.exe
+C:\Users\gamer\Documents\SharpDevelop Projects\Jogo2D\jogo2D\jogo2D\bin\Debug\jogo2D.pdb
+C:\Users\gamer\Documents\SharpDevelop Projects\Jogo2D\jogo2D\jogo2D\obj\Debug\jogo2D.csprojResolveAssemblyReference.cache
+C:\Users\gamer\Documents\SharpDevelop Projects\Jogo2D\jogo2D\jogo2D\obj\Debug\jogo2D.MainForm.resources
+C:\Users\gamer\Documents\SharpDevelop Projects\Jogo2D\jogo2D\jogo2D\obj\Debug\jogo2D.csproj.GenerateResource.Cache
+C:\Users\gamer\Documents\SharpDevelop Projects\Jogo2D\jogo2D\jogo2D\obj\Debug\jogo2D.exe
+C:\Users\gamer\Documents\SharpDevelop Projects\Jogo2D\jogo2D\jogo2D\obj\Debug\jogo2D.pdb
